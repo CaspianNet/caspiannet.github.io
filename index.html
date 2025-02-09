@@ -258,14 +258,6 @@
 
 
               
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Filter Buttons -->
 <div class="filtering text-center mb-30" id="homebutton">
     <button type="button" id="AD05Btn" class="toggle-btn active">AD 0.5m</button>    
@@ -381,6 +373,29 @@
     </div>
 
 </div> <!-- End of Gallery -->
+
+<!-- JavaScript to Toggle Image Sections -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".toggle-btn");
+    
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        // Remove active class from all buttons
+        buttons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Hide all categories
+        document.querySelectorAll(".category").forEach(el => el.style.display = "none");
+
+        // Show the selected category
+        const categoryClass = this.innerText.replace(" ", "").toUpperCase();
+        document.querySelector("." + categoryClass).style.display = "flex";
+      });
+    });
+  });
+</script>
+
 
 <!-- JavaScript to Toggle Image Sections -->
 <script>
