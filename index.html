@@ -261,7 +261,6 @@
 
 
 
-
 <!-- Gallery -->
 <div class="portfolio section-padding bg-grey" data-scroll-index='4'>
   <div class="container-fluid">
@@ -272,7 +271,7 @@
         <span class="section-title-line"></span>
       </div>
       <div class="filtering text-center mb-30" id="homebutton">
-        <button type="button" data-filter='.AD05' class="active">AD 0.5m</button>    
+        <button type="button" id="AD05" data-filter='.AD05' class="active">AD 0.5m</button>    
         <button type="button" id="SF01" data-filter='.SF01'>SF 1.0m</button>
         <button type="button" id="SF05" data-filter='.SF05'>SF 0.5m</button>
         <button type="button" id="SF15" data-filter='.SF15'>SF 1.5m</button>
@@ -391,6 +390,9 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize all images on page load
+  const allImages = document.querySelectorAll('.toggleable-image');
+  
   // Handle button clicks
   document.querySelectorAll('#homebutton button').forEach(button => {
     button.addEventListener('click', function() {
@@ -406,26 +408,22 @@ document.addEventListener('DOMContentLoaded', function() {
       const sectionClass = this.id;
       
       // Hide all images first
-      document.querySelectorAll('.toggleable-image').forEach(img => {
+      allImages.forEach(img => {
         img.style.display = 'none';
       });
       
       // Show images for selected section
-      const section = document.querySelector(`.${sectionClass}`);
-      if (section) {
-        section.querySelectorAll('.toggleable-image').forEach(img => {
-          img.style.display = 'block';
-        });
-      }
+      const sectionImages = document.querySelectorAll(`.${sectionClass} .toggleable-image`);
+      sectionImages.forEach(img => {
+        img.style.display = 'block';
+      });
     });
   });
 
-  // Activate default section (AD05) on page load
-  document.querySelector('#homebutton button.active').click();
+  // Show AD05 images by default
+  document.querySelector('#AD05').click();
 });
 </script>
-
-
 
 
               
