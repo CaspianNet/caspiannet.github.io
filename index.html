@@ -263,7 +263,6 @@
 
 
     
-    
 <!-- Gallery -->
 <div class="portfolio section-padding bg-grey" data-scroll-index='4'>
   <div class="container-fluid">
@@ -271,7 +270,8 @@
       <div class="col-lg-12 section-title text-center">
         <h3>Sample Images and Annotations</h3>
         <p>The O2DTD dataset is collected under six different light conditions, including Dawn, Morning, Afternoon, Sunset, Twilight, and Night.</p>
-        <span class="section-title-line"></span> </div>
+        <span class="section-title-line"></span> 
+      </div>
       <div class="filtering text-center mb-30" id="homebutton">
         <button type="button" data-filter='.dawn' class="active">Dawn</button>    
         <button type="button" id="MorBtnID" data-filter='.morning'>Morning</button>
@@ -281,140 +281,139 @@
       <br>
       <br>
       <div class="gallery no-padding col-lg-10 col-sm-10 mx-auto">
+
+        <!-- Dawn Section (AD05) -->
         <div class="d-flex justify-content-center flex-wrap AD05">
-                <div class="col-lg-4 col-sm-6 AD05 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img src="images/01100110001100010__TS-min.png" alt="image" >
-                      <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>01100110001100010</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 AD05 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img src="images/11001010111110101__TS-min.png" alt="image">
-                      <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>11001010111110101</h6>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-lg-4 col-sm-6 AD05 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img src="images/01100110001100010__TS-min.png" alt="image">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>01100110001100010</h6>
                 </div>
               </div>
-                  
-              <div class="d-flex justify-content-center flex-wrap SF01">
-                <div class="col-lg-4 col-sm-6 SF01 no-padding">
-                    <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF01Img1" src="images/001001000000010001101110001000_3_Inundation_OLUs_TS-min.png" alt="image" style="display: none;">
-           <script>
-              const MorBtn1 = document.getElementById("SF01");
-              const MorImg1 = document.getElementById("SF01Img1"); 
-              MorBtn1.addEventListener("click", () => { 
-                 MorImg1.style.display = "block"; 
-              });
-           </script>
-                        <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>001001000000010001101110001000</h6>
-                      </div>
-                    </div>
-                  </div>                 
-                </div>   
-                <div class="col-lg-4 col-sm-6 SF01 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF01Img2" src="images/111111111111111111111111110111_3_Inundation_OLUs_TS-min.png" alt="image" style="display: none; width: 98.2%;">
-           <script>
-              const MorBtn2 = document.getElementById("SF01");
-              const MorImg2 = document.getElementById("SF01Img2"); 
-              MorBtn2.addEventListener("click", () => { 
-                 MorImg2.style.display = "block"; 
-              });
-           </script>
-                        <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>111111111111111111111111110111</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>      
-        
-              <div class="d-flex justify-content-center flex-wrap SF05">
-                  <div class="col-lg-4 col-sm-6 SF05 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF05Img1" src="images/000000000000000000010000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" style="display: none;">
-           <script>
-              const AftBtn1 = document.getElementById("SF05");
-              const AftImg1 = document.getElementById("SF05Img1"); 
-              AftBtn1.addEventListener("click", () => { 
-                 AftImg1.style.display = "block"; 
-              });
-           </script>
-                      <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>000000000000000000010000000000</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>         
-                  <div class="col-lg-4 col-sm-6 SF05 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF05Img2" src="images/000000100000000000000000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" style="display: none;">
-           <script>
-              const AftBtn2 = document.getElementById("SF05");
-              const AftImg2 = document.getElementById("SF05Img2"); 
-              AftBtn2.addEventListener("click", () => { 
-                 AftImg2.style.display = "block"; 
-              });
-           </script>
-                      <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>000000100000000000000000000000</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>          
-              </div>          
-        
-              <div class="d-flex justify-content-center flex-wrap SF15">
-                <div class="col-lg-4 col-sm-6 SF15 no-padding">
-                    <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF15Img1" src="images/000000000000000000010000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" style="display: none;">
-           <script>
-              const SunBtn1 = document.getElementById("SF15");
-              const SunImg1 = document.getElementById("SF15Img1"); 
-              SunBtn1.addEventListener("click", () => { 
-                 SunImg1.style.display = "block"; 
-              });
-           </script>
-                        <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>000000000000000000010000000000</h6>
-                      </div>
-                    </div>
-                  </div>                 
-                </div>       
-                <div class="col-lg-4 col-sm-6 SF15 no-padding">
-                  <div class="item-img"> <a class="img-responsive"></a>
-                    <div class="part-img"> <img id="SF15Img2" src="images/000000100000000000000000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" style="display: none;">
-           <script>
-              const SunBtn2 = document.getElementById("SF15");
-              const SunImg2 = document.getElementById("SF15Img2"); 
-              SunBtn2.addEventListener("click", () => { 
-                 SunImg2.style.display = "block"; 
-              });
-           </script>
-                        <div class="overlay-img">
-                        <h4>Protection Status</h4>
-                        <h6>000000100000000000000000000000</h6>
-                      </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 AD05 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img src="images/11001010111110101__TS-min.png" alt="image">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>11001010111110101</h6>
                 </div>
               </div>
-        
+            </div>
+          </div>
+        </div>
+
+        <!-- Morning Section (SF01) -->
+        <div class="d-flex justify-content-center flex-wrap SF01" id="SF01">
+          <div class="col-lg-4 col-sm-6 SF01 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF01Img1" class="toggleable-image" src="images/001001000000010001101110001000_3_Inundation_OLUs_TS-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>001001000000010001101110001000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 SF01 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF01Img2" class="toggleable-image" src="images/111111111111111111111111110111_3_Inundation_OLUs_TS-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>111111111111111111111111110111</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Afternoon Section (SF05) -->
+        <div class="d-flex justify-content-center flex-wrap SF05" id="SF05">
+          <div class="col-lg-4 col-sm-6 SF05 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF05Img1" class="toggleable-image" src="images/000000000000000000010000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>000000000000000000010000000000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 SF05 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF05Img2" class="toggleable-image" src="images/000000100000000000000000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>000000100000000000000000000000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunset Section (SF15) -->
+        <div class="d-flex justify-content-center flex-wrap SF15" id="SF15">
+          <div class="col-lg-4 col-sm-6 SF15 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF15Img1" class="toggleable-image" src="images/000000000000000000010000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>000000000000000000010000000000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 SF15 no-padding">
+            <div class="item-img">
+              <div class="part-img">
+                <img id="SF15Img2" class="toggleable-image" src="images/000000100000000000000000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" style="display: none;">
+                <div class="overlay-img">
+                  <h4>Protection Status</h4>
+                  <h6>000000100000000000000000000000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Toggleable Image Management
+function setupSection(sectionId, imageIds) {
+  const section = document.getElementById(sectionId);
+  const images = imageIds.map(id => document.getElementById(id));
+
+  section.addEventListener('click', () => {
+    // Hide all images first
+    document.querySelectorAll('.toggleable-image').forEach(img => {
+      img.style.display = 'none';
+    });
+    
+    // Show images for clicked section
+    images.forEach(img => {
+      img.style.display = 'block';
+    });
+  });
+}
+
+// Initialize sections
+setupSection('SF01', ['SF01Img1', 'SF01Img2']);
+setupSection('SF05', ['SF05Img1', 'SF05Img2']);
+setupSection('SF15', ['SF15Img1', 'SF15Img2']);
+</script>
         
         
         
