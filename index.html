@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CASPIAN</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ 
+        /* Set display to none for image*/
+        #nonhomeimage {
+            display: none;
+        }
+    </style>
+    
+
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Overview</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Description</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Sample Data</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Download</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar --> 
+
+<!-- Banner Image -->
+
+<div class="banner text-center" data-scroll-index='0'>
+  <div class="banner-overlay">
+    <div class="container">
+      <h1 class="text-capitalize"><b>CASPIAN:</b> Deep Learning Framework For Coastal Risk Assessment</h1>
+      <p>A Scalable AI Model and Dataset for High-Precision Coastal Flood Risk Analysis Across Diverse Regions Under Future Climate Conditions</p>
+      <a data-scroll-nav="5" class="banner-btn">Download</a> 
+      
+      <!-- Demo Button with Hugging Face Icon and "Coming Soon" -->
+      <a class="banner-btn demo-btn">
+        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="height: 20px; vertical-align: middle;"> Demo <span style="color: gray;">(Coming Soon)</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- End Banner Image --> 
+
+<!-- About -->
+
+<div class="about-us section-padding" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>CASPIAN Project Overview</h3>
+        <p>The overarching goal of the CASPIAN project is to advance real-time coastal flood prediction by providing high-precision inundation mapping across diverse coastal regions under varying sea-level rise scenarios, supporting climate resilience and effective disaster management.</p>
+        <span class="section-title-line"></span> </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <h4>Motivation</h4>
+            <p style="text-align: justify;">Coastal communities are increasingly threatened by the impacts of climate change, including rising sea levels and more frequent extreme weather events. Accurate and timely flood prediction is critical for safeguarding lives, infrastructure, and ecosystems. However, traditional and simulation-based flood modeling methods are often computationally intensive, slow, and unable to provide real-time predictions, making them unsuitable for emergency response and rapid decision-making. Additionally, existing methods struggle to generalize across diverse coastal regions and adapt to varying sea-level rise (SLR) scenarios.</p>
+<p style="text-align: justify;">CASPIAN project is developed to overcome these limitations by leveraging advanced deep learning techniques for high-precision, real-time flood inundation prediction. By integrating SLR data and shoreline adaptation measures, our framework delivers scalable and robust flood risk assessments across diverse coastal environments. This enables faster, data-driven decision-making for policymakers, urban planners, and emergency response teams, supporting proactive climate resilience and effective disaster management.</p>
+<p style="text-align: justify;">This project bridges the gap between traditional simulation models and adaptive AI-driven solutions, providing a critical tool for protecting vulnerable coastal regions in the face of accelerating climate change.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-img">
+            <img src="images/CASPWork.gif" alt="" class="img-responsive"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End About --> 
+
+<!-- Services -->
+<div class="services section-padding bg-grey" data-scroll-index='2'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Dataset Features</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-bullhorn"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">First Dataset for Coastal Flood Inundation Prediction</h4>
+            <p>The CASPIAN dataset is the first of its kind for coastal flood inundation prediction. The dataset is generated using a high-fidelity hydrodynamic simulator to accurately model coastal flooding under diverse environmental scenarios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-map-marked-alt"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Collected from Two Diverse Coastal Regions</h4>
+            <p>We provide data from San Francisco, USA, and Abu Dhabi, UAE—two contrasting coastal environments with distinct geographical and shoreline characteristics, providing a comprehensive basis for flood risk analysis.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-clock"></i></div>
+          <div class="icon-text">
+            <h4 class="title-box">Includes Multiple Shoreline Protection Scenarios</h4>
+            <p>The dataset integrates various shoreline adaptation strategies, simulating both protected and unprotected coastal scenarios to comprehensively assess flood impacts under different coastal defense and mitigation measures.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-images"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Covers Multiple Sea-Level Rise (SLR) Conditions</h4>
+            <p>The dataset covers coastal flooding across multiple SLR projections, including 0.5m, 1.0m, and 1.5m scenarios, enabling comprehensive evaluation of flood risks under varying climate change impacts and future sea-level conditions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-database"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">High-Resolution Grid-Based Data for Deep Learning</h4>
+            <p>All data in CASPIAN project is generated using a hydrodynamic simulator and processed into high-resolution 1024×1024 grid formats, making it directly compatible with deep learning models for flood prediction and analysis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-cogs"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Benchmark for Coastal Flood Prediction Models</h4>
+            <p>The proposed CASPIAN-v2 model, along with other trained models, serves as a comprehensive benchmark for evaluating and advancing coastal flood prediction models, supporting robust and scalable AI solutions for climate resilience and disaster management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Services --> 
+
+<div class="about-us section-padding" data-scroll-index='3'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Dataset Description</h3>
+        <span class="section-title-line"></span> 
+      </div>
+      <div class="col-md-12 mb-30">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <p>
+              The dataset consists of flood inundation data for **Abu Dhabi (AD) and San Francisco (SF)** regions, covering multiple **Operational Landscape Units (OLUs)** under varying **sea level rise (SLR) conditions** and **shoreline protection scenarios**. 
+              The table below summarizes dataset details, including the number of OLUs, SLR depths, and protection scenarios in different dataset subsets.
+            </p>
+
+            <br>
+
+              
+<center><b>Table 1: Dataset Details for AD and SF Regions</b></center>
+<table border="1" cellspacing="0" cellpadding="8" style="width: 80%;">
+  <tr>
+    <th style="width: 5%;">Region</th>
+    <th style="width: 30%;">OLUs</th>
+    <th style="width: 5%;">SLR</th>
+    <th style="width: 15%;">Protection Scenarios</th>
+  </tr>
+
+  <!-- Abu Dhabi Section -->
+  <tr>
+    <td rowspan="2"><b>AD</b></td>
+    <td rowspan="2">
+      <b>17 OLUs:</b> 1 (Mussafah), 2 (Bain Al Jesrain), 3 (Grand Mosque District), 4 (AD Island West),  
+      5 (Marina, CBD, Al Mina), 6 (AD Island East), 7 (Al Reem Island), 8 (Saadiyat Island),  
+      9 (Yas Island), 10 (Al Raha Island), 11 (Al Shahama), 12 (Al Rahba), 13 (New Port City),  
+      14 (Ghantoot), 15 (Lulu Island), 16 (Hudayriat Island), 17 (Inner Islands)
+    </td>
+    <td rowspan="2">0.5m</td>
+    <td>142 (Main Set)</td>
+  </tr>
+  <tr>
+    <td>32 (Holdout Set)</td>
+  </tr>
+
+  <!-- San Francisco Section -->
+  <tr>
+    <td rowspan="5"><b>SF</b></td>
+    <td rowspan="5">
+      <b>30 OLUs:</b> 1 (Richardson), 2 (Corte Madera), 3 (San Rafael), 4 (Gallinas), 5 (Novato),  
+      6 (Petaluma), 7 (Napa - Sonoma), 8 (Carquinez North), 9 (Suisun Slough),  
+      10 (Montezuma Slough), 11 (Bay Point), 12 (Walnut), 13 (Carquinez South), 14 (Pinole),  
+      15 (Wildcat), 16 (Point Richmond), 17 (East Bay Crescent), 18 (San Leandro),  
+      19 (San Lorenzo), 20 (Alameda Creek), 21 (Mowry), 22 (Santa Clara Valley),  
+      23 (Stevens), 24 (San Francisquito), 25 (Belmont - Redwood), 26 (San Mateo),  
+      27 (Colma - San Bruno), 28 (Yosemite - Visitacion), 29 (Mission - Islais),  
+      30 (Golden Gate)
+    </td>
+    <td rowspan="2">1.0m</td>
+    <td>285 (Main Set)</td>
+  </tr>
+  <tr>
+    <td>46 (Holdout Set)</td>
+  </tr>
+  <tr>
+    <td>0.5m</td>
+    <td>32 (Generalizability Set)</td>
+  </tr>
+  <tr>
+    <td>1.5m</td>
+    <td>32 (Generalizability Set)</td>
+  </tr>
+</table>
+
+
+
+
+
+
+              
+                            <p>
+              The dataset has been divided into **Main, Holdout, and Generalizability Sets**. The Main Set is used for training, validation, and testing, while the Holdout Set is exclusively for testing. The Generalizability Set includes samples at different SLR levels and is split into fine-tuning and evaluation subsets.
+            </p>
+
+            <br>
+            <center><b>Table 2: Dataset Split for Model Training</b></center>
+            <table border="1" cellspacing="0" cellpadding="5">
+              <tr>
+                <th>Region</th>
+                <th>Total</th>
+                <th>Train</th>
+                <th>Validation</th>
+                <th>Test</th>
+                <th>Holdout (Test Only)</th>
+                <th>Gen Set (Fine-tune)</th>
+                <th>Gen Set (Evaluate)</th>
+              </tr>
+              <tr>
+                <td><b>AD</b></td>
+                <td>142</td>
+                <td>96</td>
+                <td>10</td>
+                <td>36</td>
+                <td>32</td>
+                <td>8</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td><b>SF</b></td>
+                <td>285</td>
+                <td>225</td>
+                <td>24</td>
+                <td>36</td>
+                <td>46</td>
+                <td>8</td>
+                <td>24</td>
+              </tr>
+            </table>
+
+            <p>
+              - **Holdout Set:** All samples in this set were used exclusively for **testing**.<br>
+              - **Generalizability Set:** Includes 32 samples; **8 samples** were used for **fine-tuning**, and **24 samples** were used for **evaluation**.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+<!-- Gallery -->
+<div class="portfolio section-padding bg-grey" data-scroll-index='4'>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 section-title text-center">
+        <h3>Sample Images and Annotations</h3>
+        <p>The O2DTD dataset is collected under six different light conditions, including Dawn, Morning, Afternoon, Sunset, Twilight, and Night.</p>
+        <span class="section-title-line"></span> </div>
+      <div class="filtering text-center mb-30" id="homebutton">
+        <button type="button" data-filter='.dawn' class="active">Dawn</button>    
+        <button type="button" id="MorBtnID" data-filter='.morning'>Morning</button>
+        <button type="button" id="AftBtnID" data-filter='.afternoon'>Afternoon</button>
+        <button type="button" id="SunBtnID" data-filter='.sunset'>Sunset</button>
+      </div>
+      <br>
+      <br>
+      <div class="gallery no-padding col-lg-10 col-sm-10 mx-auto">
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 325.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 518.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 791.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 325L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 518L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 791L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg1" src="images/Morning 125.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn1 = document.getElementById("MorBtnID");
+      const MorImg1 = document.getElementById("MorningImg1"); 
+      MorBtn1.addEventListener("click", () => { 
+         MorImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg2" src="images/Morning 316.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn2 = document.getElementById("MorBtnID");
+      const MorImg2 = document.getElementById("MorningImg2"); 
+      MorBtn2.addEventListener("click", () => { 
+         MorImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg3" src="images/Morning 505.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn3 = document.getElementById("MorBtnID");
+      const MorImg3 = document.getElementById("MorningImg3"); 
+      MorBtn3.addEventListener("click", () => { 
+         MorImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg4" src="images/Morning 125L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn4 = document.getElementById("MorBtnID");
+      const MorImg4 = document.getElementById("MorningImg4"); 
+      MorBtn4.addEventListener("click", () => { 
+         MorImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg5" src="images/Morning 316L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn5 = document.getElementById("MorBtnID");
+      const MorImg5 = document.getElementById("MorningImg5"); 
+      MorBtn5.addEventListener("click", () => { 
+         MorImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg6" src="images/Morning 505L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn6 = document.getElementById("MorBtnID");
+      const MorImg6 = document.getElementById("MorningImg6"); 
+      MorBtn6.addEventListener("click", () => { 
+         MorImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg1" src="images/Afternoon 029.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn1 = document.getElementById("AftBtnID");
+      const AftImg1 = document.getElementById("AfternoonImg1"); 
+      AftBtn1.addEventListener("click", () => { 
+         AftImg1.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg2" src="images/Afternoon 574.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn2 = document.getElementById("AftBtnID");
+      const AftImg2 = document.getElementById("AfternoonImg2"); 
+      AftBtn2.addEventListener("click", () => { 
+         AftImg2.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg3" src="images/Afternoon 642.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn3 = document.getElementById("AftBtnID");
+      const AftImg3 = document.getElementById("AfternoonImg3"); 
+      AftBtn3.addEventListener("click", () => { 
+         AftImg3.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg4" src="images/Afternoon 029L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn4 = document.getElementById("AftBtnID");
+      const AftImg4 = document.getElementById("AfternoonImg4"); 
+      AftBtn4.addEventListener("click", () => { 
+         AftImg4.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg5" src="images/Afternoon 574L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn5 = document.getElementById("AftBtnID");
+      const AftImg5 = document.getElementById("AfternoonImg5"); 
+      AftBtn5.addEventListener("click", () => { 
+         AftImg5.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg6" src="images/Afternoon 642L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn6 = document.getElementById("AftBtnID");
+      const AftImg6 = document.getElementById("AfternoonImg6"); 
+      AftBtn6.addEventListener("click", () => { 
+         AftImg6.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg1" src="images/Sunset 004.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn1 = document.getElementById("SunBtnID");
+      const SunImg1 = document.getElementById("SunsetImg1"); 
+      SunBtn1.addEventListener("click", () => { 
+         SunImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg2" src="images/Sunset 446.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn2 = document.getElementById("SunBtnID");
+      const SunImg2 = document.getElementById("SunsetImg2"); 
+      SunBtn2.addEventListener("click", () => { 
+         SunImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg3" src="images/Sunset 489.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn3 = document.getElementById("SunBtnID");
+      const SunImg3 = document.getElementById("SunsetImg3"); 
+      SunBtn3.addEventListener("click", () => { 
+         SunImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg4" src="images/Sunset 004L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn4 = document.getElementById("SunBtnID");
+      const SunImg4 = document.getElementById("SunsetImg4"); 
+      SunBtn4.addEventListener("click", () => { 
+         SunImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg5" src="images/Sunset 446L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn5 = document.getElementById("SunBtnID");
+      const SunImg5 = document.getElementById("SunsetImg5"); 
+      SunBtn5.addEventListener("click", () => { 
+         SunImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg6" src="images/Sunset 489L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn6 = document.getElementById("SunBtnID");
+      const SunImg6 = document.getElementById("SunsetImg6"); 
+      SunBtn6.addEventListener("click", () => { 
+         SunImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>        
+</div>     
+</div>
+</div>
+
+
+
+
+
+
+
+    
+
+<!-- Services -->
+<div class="services section-padding" data-scroll-index='5'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Download Center</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box2 bg-white text-center">
+          <div class="icon"> <i class="fas fa-cloud-download-alt"></i></div>
+          <div class="icon-text">
+            <h4 class="title-box">
+              <a href="https://drive.google.com/drive/folders/1n5F8kXhbNHnPrrXSC_BXBk0HQuNX03wK?usp=sharing">Dataset</a>
+              <span style="display: block; color: gray;">[Coming Soon]</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box2 bg-white text-center">
+          <div class="icon"> <i class="fab fa-github"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">
+              <a href="https://github.com/CaspianNet/CASPIAN-v2">Code</a>
+              <span style="display: block; color: gray;">[Coming Soon]</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-30">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <h4>Contact</h4>
+            <p>If you have any question, contact us at: bilal.hassan@nyu.edu </p>
+          </div>
+        </div>
+      </div>
+        
+          <br>
+          <br>
+          <br>&nbsp
+ </div>
+  </div>
+</div>
+
+<!-- End Services --> 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- End Contact -->
+<footer class="footer-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <p>&copy; Copyright 2023 - <a href = "https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/transportation-infrastructure-management-lab.html"><strong>TIML-lab</strong></a>. All Rights Reserved. 
+   <!---           <br> Designed by: <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p> --->
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- owl carousel js --> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- magnific-popup --> 
+<script src="js/jquery.fancybox.min.js"></script> 
+
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+
+<!-- isotope.pkgd.min js --> 
+<script src="js/isotope.pkgd.min.js"></script> 
+<script>
+  $(window).on("scroll",function () {
+
+      var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+      if(bodyScroll > 130){
+
+          navbar.addClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+      }else{
+
+          navbar.removeClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+      }
+
+  });
+
+  $(window).on("load",function (){
+
+
+
+var bodyScroll = $(window).scrollTop(),
+navbar = $(".navbar");
+
+if(bodyScroll > 130){
+
+navbar.addClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+}else{
+
+navbar.removeClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-white.png');
+
+}
+
+/* smooth scroll
+  -------------------------------------------------------*/
+  $.scrollIt({
+
+easing: 'swing',      // the easing function for animation
+scrollTime: 900,       // how long (in ms) the animation takes
+activeClass: 'active', // class given to the active nav element
+onPageChange: null,    // function(pageIndex) that is called when page is changed
+topOffset: -63
+});
+
+/* isotope
+-------------------------------------------------------*/
+var $gallery = $('.gallery').isotope({});
+$('.gallery').isotope({
+
+    // options
+    itemSelector: '.item-img',
+    transitionDuration: '0.5s',
+
+});
+
+
+$(".gallery .single-image").fancybox({
+  'transitionIn'  : 'elastic',
+  'transitionOut' : 'elastic',
+  'speedIn'   : 600,
+  'speedOut'    : 200,
+  'overlayShow' : false
+});
+
+
+/* filter items on button click
+-------------------------------------------------------*/
+$('.filtering').on( 'click', 'button', function() {
+
+    var filterValue = $(this).attr('data-filter');
+
+    $gallery.isotope({ filter: filterValue });
+
+    });
+
+$('.filtering').on( 'click', 'button', function() {
+
+    $(this).addClass('active').siblings().removeClass('active');
+
+});
+
+})
+
+$(function () {
+$( ".cover-bg" ).each(function() {
+    var attr = $(this).attr('data-image-src');
+
+    if (typeof attr !== typeof undefined && attr !== false) {
+      $(this).css('background-image', 'url('+attr+')');
+    }
+
+  });
+
+  /* sections background color from data background
+  -------------------------------------------------------*/
+  $("[data-background-color]").each(function() {
+      $(this).css("background-color", $(this).attr("data-background-color")  );
+  });
+
+
+/* Owl Caroursel testimonial
+  -------------------------------------------------------*/
+  
+  $('.testimonials .owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    items:1,
+    margin:30,
+    dots: true,
+    nav: false,
+    
+  });
+
+});
+
+</script>
+</body>
+</html>
