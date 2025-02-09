@@ -386,7 +386,7 @@ tr:nth-child(n+2) {
 	top: 54px;
 	right: 25px;
 	z-index: 2;
-	font-size: 18px;
+	font-size: 12px;
 	-webkit-transition: color 150ms ease-in-out 200ms;
 	transition: color 150ms ease-in-out 200ms;
 	text-align: center;
@@ -412,7 +412,7 @@ tr:nth-child(n+2) {
 	top: 30px;
 	right: 25px;
 	z-index: 2;
-	font-size: 18px;
+	font-size: 12px;
 	-webkit-transition: color 150ms ease-in-out 200ms;
 	transition: color 150ms ease-in-out 200ms;
 	text-align: center;
@@ -454,7 +454,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 .portfolio .gallery .item-img:hover .overlay-img h4 {
-	color: white;
+	color: #808080;
 	pointer-events: none;
 }
 .portfolio .gallery .item-img:hover .overlay-img h4:before {
@@ -462,7 +462,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 .portfolio .gallery .item-img:hover .overlay-img h6 {
-	color: white;
+	color: #808080;
 	pointer-events: none;
 }
 .portfolio .gallery .item-img:hover .overlay-img h6:before {
