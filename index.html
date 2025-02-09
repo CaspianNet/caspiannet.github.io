@@ -172,7 +172,7 @@
         <div class="section-info">
           <div class="sub-title-paragraph">
             <p>
-              The dataset consists of flood inundation data for **Abu Dhabi (AD) and San Francisco (SF)** regions, covering multiple **Operational Landscape Units (OLUs)** under varying **sea level rise (SLR) conditions** and **shoreline protection scenarios**. 
+              The dataset consists of flood inundation data for Abu Dhabi (AD) and San Francisco (SF) regions, covering multiple operational landscape units (OLUs) under varying SLR conditions and shoreline protection scenarios. 
               The table below summarizes dataset details, including the number of OLUs, SLR depths, and protection scenarios in different dataset subsets.
             </p>
 
@@ -239,49 +239,6 @@
 
 
               
-                            <p>
-              The dataset has been divided into **Main, Holdout, and Generalizability Sets**. The Main Set is used for training, validation, and testing, while the Holdout Set is exclusively for testing. The Generalizability Set includes samples at different SLR levels and is split into fine-tuning and evaluation subsets.
-            </p>
-
-            <br>
-            <center><b>Table 2: Dataset Split for Model Training</b></center>
-            <table border="1" cellspacing="0" cellpadding="5">
-              <tr>
-                <th>Region</th>
-                <th>Total</th>
-                <th>Train</th>
-                <th>Validation</th>
-                <th>Test</th>
-                <th>Holdout (Test Only)</th>
-                <th>Gen Set (Fine-tune)</th>
-                <th>Gen Set (Evaluate)</th>
-              </tr>
-              <tr>
-                <td><b>AD</b></td>
-                <td>142</td>
-                <td>96</td>
-                <td>10</td>
-                <td>36</td>
-                <td>32</td>
-                <td>8</td>
-                <td>24</td>
-              </tr>
-              <tr>
-                <td><b>SF</b></td>
-                <td>285</td>
-                <td>225</td>
-                <td>24</td>
-                <td>36</td>
-                <td>46</td>
-                <td>8</td>
-                <td>24</td>
-              </tr>
-            </table>
-
-            <p>
-              - **Holdout Set:** All samples in this set were used exclusively for **testing**.<br>
-              - **Generalizability Set:** Includes 32 samples; **8 samples** were used for **fine-tuning**, and **24 samples** were used for **evaluation**.
-            </p>
 
           </div>
         </div>
