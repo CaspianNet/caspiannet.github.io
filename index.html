@@ -315,7 +315,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF01Img1" src="images/001001000000010001101110001000_3_Inundation_OLUs_TS-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>001001000000010001101110001000</h4>
                 </div>
@@ -326,7 +326,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF01Img2" src="images/111111111111111111111111110111_3_Inundation_OLUs_TS-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>111111111111111111111111110111</h4>
                 </div>
@@ -341,7 +341,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF05Img1" src="images/000000000000000000010000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>000000000000000000010000000000</h4>
                 </div>
@@ -352,7 +352,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF05Img2" src="images/000000100000000000000000000000_3_Inundation_OLUs_50_FT-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>000000100000000000000000000000</h4>
                 </div>
@@ -367,7 +367,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF15Img1" src="images/000000000000000000010000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>000000000000000000010000000000</h4>
                 </div>
@@ -378,7 +378,7 @@
             <div class="item-img">
               <div class="part-img">
                 <img id="SF15Img2" src="images/000000100000000000000000000000_3_Inundation_OLUs_150_FT-min.png" alt="image" class="toggleable-image" style="display: none;">
-                <div class="overlay-img">
+                <div class="overlay-img-sf">
                   <h6>Protection Status</h6>
                   <h4>000000100000000000000000000000</h4>
                 </div>
@@ -390,54 +390,7 @@
     </div>
   </div>
 </div>
-
-<style>
     
-/* Ensure overlay covers the full image */
-.SF01 .overlay-img,
-.SF05 .overlay-img,
-.SF15 .overlay-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-/* Position text at the top-left */
-.SF01 .overlay-img h4,
-.SF05 .overlay-img h4,
-.SF15 .overlay-img h4,
-.SF01 .overlay-img h6,
-.SF05 .overlay-img h6,
-.SF15 .overlay-img h6 {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    color: transparent; /* Initially hide text */
-    font-size: 12px;
-    text-align: left;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0); /* Initially transparent */
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* Show background and text on hover */
-.SF01 .overlay-img:hover h4,
-.SF05 .overlay-img:hover h4,
-.SF15 .overlay-img:hover h4,
-.SF01 .overlay-img:hover h6,
-.SF05 .overlay-img:hover h6,
-.SF15 .overlay-img:hover h6 {
-    color: yellow; /* Yellow text on hover */
-    background: rgba(255, 255, 255, 0.7); /* White background that fits text */
-}
-
-
-</style>
     
 <script>
 document.addEventListener('DOMContentLoaded', function() {
