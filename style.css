@@ -383,8 +383,8 @@ tr:nth-child(n+2) {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
-	top: 54px;
-	right: 25px;
+	top: 300px;
+	right: 75px;
 	z-index: 2;
 	font-size: 12px;
 	-webkit-transition: color 150ms ease-in-out 200ms;
@@ -395,7 +395,7 @@ tr:nth-child(n+2) {
 }
 .portfolio .gallery .item-img .part-img .overlay-img h4:before {
 	content: '';
-	background: #fff;
+	background: #808080;
 	bottom: 0;
 	position: absolute;
 	right: 100%;
@@ -409,8 +409,8 @@ tr:nth-child(n+2) {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
-	top: 30px;
-	right: 25px;
+	top: 270px;
+	right: 75px;
 	z-index: 2;
 	font-size: 12px;
 	-webkit-transition: color 150ms ease-in-out 200ms;
@@ -421,7 +421,7 @@ tr:nth-child(n+2) {
 }
 .portfolio .gallery .item-img .part-img .overlay-img h6::before {
 	content: '';
-	background: #fff;
+	background: #808080;
 	bottom: 0;
 	right: auto;
 	position: absolute;
