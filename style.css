@@ -395,7 +395,7 @@ tr:nth-child(n+2) {
 }
 .portfolio .gallery .item-img .part-img .overlay-img h4:before {
 	content: '';
-	background: #808080;
+	background: #D3D3D3;
 	bottom: 0;
 	position: absolute;
 	right: 100%;
@@ -421,7 +421,7 @@ tr:nth-child(n+2) {
 }
 .portfolio .gallery .item-img .part-img .overlay-img h6::before {
 	content: '';
-	background: #808080;
+	background: #D3D3D3;
 	bottom: 0;
 	right: auto;
 	position: absolute;
