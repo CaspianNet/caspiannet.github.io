@@ -383,7 +383,7 @@ tr:nth-child(n+2) {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
-	top: 400px;
+	top: 420px;
 	right: 75px;
 	z-index: 2;
 	font-size: 12px;
@@ -409,7 +409,7 @@ tr:nth-child(n+2) {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
-	top: 370px;
+	top: 400px;
 	right: 75px;
 	z-index: 2;
 	font-size: 12px;
@@ -497,7 +497,7 @@ tr:nth-child(n+2) {
   overflow: hidden;
   position: absolute;
   top: 20px;   /* Position in top-left corner */
-  left: 45px;
+  left: 60px;
   z-index: 2;
   font-size: 12px;
   transition: color 150ms ease-in-out 200ms;
@@ -531,7 +531,7 @@ tr:nth-child(n+2) {
   position: absolute;
   /* Slightly below h4 so they don't overlap */
   top: 45px;  
-  left: 45px; 
+  left: 60px; 
   z-index: 2;
   font-size: 12px;
   transition: color 150ms ease-in-out 200ms;
