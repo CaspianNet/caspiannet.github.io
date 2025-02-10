@@ -393,104 +393,48 @@
 
 <style>
     
+/* Ensure overlay covers the full image */
 .SF01 .overlay-img,
 .SF05 .overlay-img,
-.SF15 .overlay-img{
-	position: absolute;
-	top: 0;
-	width: 0%;
-	height: 100%;
-	overflow: hidden;
-	pointer-events: none;
+.SF15 .overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
 }
 
+/* Position h4 and h6 at the top-left */
 .SF01 .overlay-img h4,
 .SF05 .overlay-img h4,
-.SF15 .overlay-img h4{
-	color: transparent;
-	overflow: hidden;
-	position: absolute;
-	top: 60px;
-	left: 75px;
-	z-index: 2;
-	font-size: 12px;
-	-webkit-transition: color 150ms ease-in-out 200ms;
-	transition: color 150ms ease-in-out 200ms;
-	text-align: center;
-	padding: 0 10px;
-	pointer-events: none;
-}
-.SF01 .overlay-img h4,
-.SF05 .overlay-img h4,
-.SF15 .overlay-img h4:before {
-	content: '';
-	background: #D3D3D3;
-	bottom: 0;
-	position: absolute;
-	left: 100%;
-	top: 0;
-	width: 0%;
-	-webkit-transition: right 600ms ease-in-out 0s;
-	transition: right 600ms ease-in-out 0s;
-	pointer-events: none;
-}
+.SF15 .overlay-img h4,
 .SF01 .overlay-img h6,
 .SF05 .overlay-img h6,
 .SF15 .overlay-img h6 {
-	color: transparent;
-	overflow: hidden;
-	position: absolute;
-	top: 30px;
-	left: 75px;
-	z-index: 2;
-	font-size: 12px;
-	-webkit-transition: color 150ms ease-in-out 200ms;
-	transition: color 150ms ease-in-out 200ms;
-	text-align: center;
-	padding: 0 10px;
-	pointer-events: none;
-}
-.SF01 .overlay-img h6,
-.SF05 .overlay-img h6,
-.SF15 .overlay-img h6:before {
-	content: '';
-	background: #D3D3D3;
-	bottom: 0;
-	right: auto;
-	position: absolute;
-	right: 100%;
-	bottom: 0;
-	width: 0%;
-	-webkit-transition: left 600ms ease-in-out 0s;
-	transition: left 600ms ease-in-out 0s;
-	pointer-events: none;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #808080; /* Gray color */
+    font-size: 12px;
+    text-align: left;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.7); /* Light background */
+    border-radius: 5px;
 }
 
+/* Adjust hover effect */
+.SF01 .overlay-img h4:hover,
+.SF05 .overlay-img h4:hover,
+.SF15 .overlay-img h4:hover,
+.SF01 .overlay-img h6:hover,
+.SF05 .overlay-img h6:hover,
+.SF15 .overlay-img h6:hover {
+    color: yellow; /* Yellow hover effect */
+    background: rgba(255, 255, 0, 0.7);
+}
 
-.SF01 .overlay-img h4,
-.SF05 .overlay-img h4,
-.SF15 .overlay-img h4 {
-	color: #808080;
-	pointer-events: none;
-}
-.SF01 .overlay-img h4,
-.SF05 .overlay-img h4,
-.SF15 .overlay-img h4:before {
-	right: 100%;
-	pointer-events: none;
-}
-.SF01 .overlay-img h6,
-.SF05 .overlay-img h6,
-.SF15 .overlay-img h6  {
-	color: #808080;
-	pointer-events: none;
-}
-.SF01 .overlay-img h6,
-.SF05 .overlay-img h6,
-.SF15 .overlay-img h6:before {
-	left: 100%;
-	pointer-events: none;
-}
 </style>
     
 <script>
