@@ -474,8 +474,10 @@ tr:nth-child(n+2) {
 
 
 
+
+
 /* SF Overlay: Top-Left */
-.overlay-img-sf {
+.portfolio .gallery .item-img .part-img .overlay-img-sf {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -484,7 +486,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 
-.overlay-img-sf h4 {
+.portfolio .gallery .item-img .part-img .overlay-img-sf h4 {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
@@ -499,7 +501,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 
-.overlay-img-sf h4:before {
+.portfolio .gallery .item-img .part-img .overlay-img-sf h4:before {
 	content: '';
 	background: #D3D3D3;
 	bottom: 0;
@@ -512,7 +514,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 
-.overlay-img-sf h6 {
+.portfolio .gallery .item-img .part-img .overlay-img-sf h6 {
 	color: transparent;
 	overflow: hidden;
 	position: absolute;
@@ -527,7 +529,7 @@ tr:nth-child(n+2) {
 	pointer-events: none;
 }
 
-.overlay-img-sf h6::before {
+.portfolio .gallery .item-img .part-img .overlay-img-sf h6::before {
 	content: '';
 	background: #D3D3D3;
 	bottom: 0;
@@ -541,19 +543,23 @@ tr:nth-child(n+2) {
 }
 
 /* Hover Effects */
-.overlay-img-sf h4 {
-	color: #D3D3D3;
+.portfolio .gallery .item-img:hover .overlay-img-sf h4 {
+	color: yellow;
 }
-.overlay-img-sf h4:before {
+.portfolio .gallery .item-img:hover .overlay-img-sf h4:before {
 	left: -100%;
 }
 
-.overlay-img-sf h6 {
+.portfolio .gallery .item-img:hover .overlay-img-sf h6 {
 	color: yellow;
 }
-.overlay-img-sf h6:before {
+.portfolio .gallery .item-img:hover .overlay-img-sf h6:before {
 	left: -100%;
 }
+
+
+
+
 
 
 
