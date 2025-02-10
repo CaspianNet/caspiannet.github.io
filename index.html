@@ -406,7 +406,7 @@
     pointer-events: none;
 }
 
-/* Position h4 and h6 at the top-left */
+/* Position text at the top-left */
 .SF01 .overlay-img h4,
 .SF05 .overlay-img h4,
 .SF15 .overlay-img h4,
@@ -416,24 +416,26 @@
     position: absolute;
     left: 15px;
     top: 15px;
-    color: #808080; /* Gray color */
+    color: transparent; /* Initially hide text */
     font-size: 12px;
     text-align: left;
     padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.7); /* Light background */
+    background: rgba(255, 255, 255, 0); /* Initially transparent */
     border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Adjust hover effect */
-.SF01 .overlay-img h4:hover,
-.SF05 .overlay-img h4:hover,
-.SF15 .overlay-img h4:hover,
-.SF01 .overlay-img h6:hover,
-.SF05 .overlay-img h6:hover,
-.SF15 .overlay-img h6:hover {
-    color: yellow; /* Yellow hover effect */
-    background: rgba(255, 255, 0, 0.7);
+/* Show background and text on hover */
+.SF01 .overlay-img:hover h4,
+.SF05 .overlay-img:hover h4,
+.SF15 .overlay-img:hover h4,
+.SF01 .overlay-img:hover h6,
+.SF05 .overlay-img:hover h6,
+.SF15 .overlay-img:hover h6 {
+    color: yellow; /* Yellow text on hover */
+    background: rgba(255, 255, 255, 0.7); /* White background that fits text */
 }
+
 
 </style>
     
