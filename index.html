@@ -73,9 +73,7 @@
 
 
 <!-- End Banner Image --> 
-
 <!-- About -->
-
 <div class="about-us section-padding" data-scroll-index='1'>
   <div class="container">
     <div class="row">
@@ -85,6 +83,7 @@
         <span class="section-title-line"></span> 
       </div>
       
+      <!-- Text Column -->
       <div class="col-md-6 mb-50">
         <div class="section-info">
           <div class="sub-title-paragraph">
@@ -98,18 +97,32 @@
 
       <!-- GIFs Column -->
       <div class="col-md-6 mb-50">
-        <div class="section-img">
-        <br>
-          <img src="images/CASPWork.gif" alt="CASPWork GIF" class="img-responsive" style="width: 100%; margin-bottom: 20px;"/>
-        <br>
-          <img src="images/caspweb2.gif" alt="CASPWeb2 GIF" class="img-responsive" style="width: 100%;"/>
+        <div class="section-img text-center">
+          <!-- Line break for spacing -->
+          <br>
+          <img src="images/CASPWork.gif" alt="CASPWork GIF" class="img-responsive gif-image">
+          <br><br>
+          <img src="images/caspweb2.gif" alt="CASPWeb2 GIF" class="img-responsive gif-image">
         </div>
       </div>
-
+      
     </div>
   </div>
 </div>
 
+<!-- CSS -->
+<style>
+  .gif-image {
+    width: 100%;
+    max-width: 500px; /* Ensures GIFs are not too large on big screens */
+    display: block;
+    margin: 0 auto;
+    background-color: white; /* Prevents transparency issues */
+    padding: 10px; /* Adds spacing around the GIFs */
+    border-radius: 5px; /* Optional: Smooth edges */
+    filter: brightness(1.2) contrast(1.1); /* Enhances GIF clarity */
+  }
+</style>
 
     
 
